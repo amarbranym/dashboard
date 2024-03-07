@@ -17,6 +17,7 @@ blogRouter.post(
   uploadPost
 );
 
+
 blogRouter.put(
   "/update-blog/:id",
   isAutheticated,
@@ -42,6 +43,7 @@ blogRouter.get(
   authorizeRoles("admin"),
   getAllBlogs
 );
+// get one blog route
 blogRouter.get(
   "/get-one-blog/:id",
   isAutheticated,
